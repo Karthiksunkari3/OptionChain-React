@@ -1,0 +1,645 @@
+.example{
+    border:1px solid black;
+}
+.example thead{
+    border-bottom: 2px solid #000000; background: white; position: sticky; top: 0; z-index: 10;cursor:pointer; 
+}
+
+
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: auto 130%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px 0px;
+  }
+  
+  /*tr:nth-child(even) {
+    background-color: #dddddd;
+  }*/
+  
+  .grey{
+      background-color: #e8e8e8;
+      border-top: 1px solid #f1f1f1;
+      border-right: 1px solid #f1f1f1;
+      border-bottom: 1px solid #f1f1f1;
+  }
+
+.activeLQ{
+    background-color: dodgerblue !important; 
+    color: white;
+    box-shadow : 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12) !important;
+}
+
+    .markpossitivechg{
+        color: green;
+    }
+    .marknegativeoichg{
+        color: red !important;
+    }
+    .maxoichngce{
+        font-weight: bold;
+        background-color: red !important;
+        color: white;
+    }
+    .minoichngce{
+        font-weight: bold;
+        background-color: lightgreen !important;
+        color: black;
+    }
+    .maxoichngpe{
+        font-weight: bold;
+        background-color: darkgreen !important;
+        color: white;
+    }
+    .minoichngpe{
+        font-weight: bold;
+        background-color: #FFBFC0 !important;
+        color: black;
+    }
+    .maxoice {
+        /* color: blue */
+        font-weight: bold;
+        background-color: red !important;
+        color: white;
+    }
+    .minoice {
+        /* color: red */
+        background-color: lightgreen !important;
+    }
+    .maxoipe {
+        font-weight: bold;
+        background-color: darkgreen !important;
+        color: white;
+    }
+    .minoipe {
+        font-weight: bold;
+        background-color: #FFBFC0 !important;
+    }
+    .maxvolce{
+        font-weight: bold;
+        background-color: DodgerBlue !important;
+        color: white;
+    }
+    .minvolce{
+        font-weight: bold;
+        background-color: #ADD8E6 !important;
+        color: black;
+    }                
+    .maxvolpe{
+        font-weight: bold;
+        background-color: DodgerBlue !important;
+        color: white;
+    }
+    .minvolpe{
+        font-weight: bold;
+        background-color: #ADD8E6 !important;
+        color: black;
+    }
+    .maxltp{
+        font-weight: bold;
+        background: rgb(212, 248, 212) !important;
+        color: #428bca;
+    }
+    .minltp{
+        font-weight: bold;
+        color: #428bca;
+        background: rgb(255, 235, 235) !important;
+    }
+    .selectedstrike{
+        background-color:#e2d87f !important;
+    }
+    tr.item.selectedstrike td.Putts.grey{
+        background-color:#e2d87f !important;
+    }
+    tr.item.selectedstrike td.Putts.maxoipe.grey{
+        font-weight: bold;
+        background-color: darkgreen !important;
+        color: white !important;
+    }
+    tr.item.selectedstrike td.Putts.maxoichngpe.grey{
+        font-weight: bold;
+        background-color: darkgreen !important;
+        color: white !important;
+    }
+    tr.item.selectedstrike td.Putts.maxvolpe.grey{					
+        font-weight: bold;
+        background-color: DodgerBlue !important;
+        color: white !important;
+    }
+    tr.item.selectedstrike td.Calls.grey{
+        background-color:#e2d87f !important;
+    }
+    tr.item.selectedstrike td.Calls.minltp{
+        background-color:#e2d87f !important;
+    }
+    tr.item.selectedstrike td.Putts.minltp{
+        background-color:#e2d87f !important;
+    }
+    tr.item.selectedstrike td.Calls.maxltp{
+        background-color:#e2d87f !important;
+    }
+    tr.item.selectedstrike td.Putts.maxltp{
+        background-color:#e2d87f !important;
+    }
+    td {
+    text-align: center !important;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11.5px;
+    color: #333333;
+    border-collapse: collapse;
+    }
+    .Calls{
+        /* background-color: #dddddd; 
+        border : 1px solid #ffffff;*/
+        font-size: 12px;
+    }
+    .Putts{
+        /* background-color: #FFFFFF; */
+        font-size: 12px;
+    }
+    th {
+    text-align: center !important;
+    padding: 6px !important;
+    table-layout: auto !important;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color: #333333;
+    border-collapse: collapse;
+    background-color: #FFFFFF;
+    /*line-height: 20px!important;*/
+    }
+    /* table#example {
+        table-layout: fixed;
+    } */
+
+    @media only screen and (max-width: 800px) { 
+        table#example {
+            table-layout: auto;
+        }
+    }
+    @media only screen and (min-width:801px) { 
+        table#example {
+            table-layout: auto;
+        }
+    }
+
+    .mdl-data-table td:first-of-type, .mdl-data-table th:first-of-type {
+        padding-left: 5px;
+    }
+    .mdl-data-table td:last-of-type, .mdl-data-table th:last-of-type {
+        padding-right: 5px;
+    }
+    /*desktop*/
+    @media (min-width : 769px) {
+        .pl_10
+        {
+            padding-left:10px!important;
+            
+        }
+    }
+    /*mobile*/
+    @media (max-width : 768px) {
+
+        .pl_10
+        {
+        
+            margin-top:10px!important;
+        }
+    }
+
+    .summary_br_0{
+        border-right: 0px!important;
+    }
+    .summary_th_header_first{
+    border-bottom:1px solid rgba(0,0,0,.12)!important;
+    text-align: center!important;
+    }
+    .mdl-data-table th {
+    height: 28px!important;
+        padding:0px!important;
+    }
+    .fontcls
+    {
+    font-size:12px;
+    padding-left:5px;	 
+    padding-right:5px;	 
+        
+    }
+    .mdl-cell {
+        margin: 0px;
+        font-size:12px;
+        
+    }
+    .insidetableheader
+    {
+    color: rgba(0,0,0,.54);
+    font-weight:bold;
+    font-size: 12px;
+    }
+    .mdl-data-table tbody tr {
+    
+        height: 28px;
+    
+    }
+    .mdl-data-table td {
+    
+        height: 0px;
+
+        border-right: 1px solid rgba(0,0,0,.12);
+            padding: 5px;
+    
+    }
+    .summary_ta_center{
+
+        text-align: center!important;
+    }
+    .headercolor {
+        border-top: 1px solid black;
+        background-color:#ffffff;
+        color:#000;
+        text-align:center;
+    }
+    
+    ul.ColVis_collection li {
+        padding: 6px;
+    }
+    ul.ColVis_collection li span {
+        display: inline-block;
+    /* padding-left: 0.2em;*/
+        padding-left: 0.1em;
+        cursor: pointer;
+    }
+
+        
+    @media(max-width : 768px) {
+    .desktop
+    {
+    display:none;	 
+    }
+    .modal {
+    position: absolute;
+    background:none!important;
+    }
+    
+    .modal-content {
+    width: 80%!important;
+    }
+    }
+    .mdl-textfield__input {
+        display: moz-inline-stack !important;
+    }
+    .mdl-button--primary.mdl-button--primary {
+        border-radius: 20px;
+        background: white !important;
+        color: rgb(63,81,181)!important;
+    
+    }
+    .hidebutton {
+        display:none;
+    }
+
+
+
+    table.optionchain tbody th, table.optionchain tbody td {
+    
+    /*  border-top: 1px solid #f9f9f9;
+        border-right: 1px solid #f9f9f9;*/
+        
+        border-top: 1px solid #f1f1f1;
+        border-right: 1px solid #f1f1f1;
+    }
+
+    table.optionchain tbody td {
+    white-space: nowrap;
+    }
+
+    button.dt-button.active {
+        background: #008ed4!important;
+        color: rgb(255,255,255)!important;
+    }
+    .fs-wrap {
+        display: inline-block;
+        cursor: pointer;
+        line-height: 1;
+        width: 90px;
+        font-size: 12px;
+        outline-color:#3f51b5!important;
+
+    }
+    .fs-dropdown {
+        position: absolute;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        width: 90px;
+        margin-top: 5px;
+        z-index: 300px;
+    }
+    @-moz-document url-prefix() {
+        .mdl-textfield__input {
+            /*display: inline!important;*/
+            display: inline-block;
+        }
+    }
+    .right_side {
+        float: right !important;
+    }
+    @media (max-width: 992px) {
+        .right_side {
+            float: none !important;
+        }
+        .optionchain_autotoggle
+    {
+        white-space:initial;
+    }	
+    }
+    body {
+        line-height: 10px!important;
+        background:rgb(255,255,255) ;
+    }
+    .mdl-textfield__label:after {
+        transition-duration: 0s!important;
+    }
+    .mdl-textfield.is-focused .mdl-textfield__label:after {
+        bottom: 5px!important;
+        visibility: visible;
+        width: 100%;
+    }
+    .mdl-textfield {
+        padding-top: 15px!important;
+        padding-bottom:5px!important;
+    }
+    #frmOptChain {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+
+    /*
+    @-moz-document url-prefix() {
+        table.cell-border thead th {
+            border: 0 none;
+        }
+    }
+    */
+    table.optionchain tbody th, table.optionchain tbody td {
+        padding: 3px 3px;
+    }
+    table.optionchain thead th, table.optionchain thead td {
+        padding: 3px 3px;
+    }
+
+    table.optionchain {
+        /* table-layout:fixed;
+        */
+        /*this is added latestly*/
+        table-layout: auto !important;
+        font-family: 'Roboto', sans-serif;
+        font-size: 11.5px;
+        color: #333333;
+        border-collapse: collapse;
+        background-color: #FFFFFF;
+        line-height: 20px!important;
+    }
+
+    table.optionchain tbody tr:hover td{
+        background-color: #BFCFFF!important ;
+    }
+
+
+    .khaki {
+        background-color: #e2d87f !important;
+    }
+   
+    .strikecolumnhighlight {
+    
+        background-color: #e2d87f;
+    
+    }
+
+    /*.celltest {
+        background: linear-gradient(to right, green, white) 17%;
+    }
+    */
+
+    .itmhighlight {
+    
+        background-color: #e8e8e8;
+    
+    }
+    .bordercss {
+        /*border-top: 1px solid #f1f1f1!important;*/
+        
+        border-right: 1px solid #f1f1f1!important;
+    }
+
+  
+
+
+
+    table.optionchain tfoot th, table.optionchain tfoot td {
+        padding: 3px 3px;
+        font-weight:bold;
+        border-right: 1px solid #f1f1f1!important;
+        border-bottom: 1px solid black!important;
+    }
+
+    .dt_toggle_buttons {
+
+    padding: 0 8px;
+    /*text-transform:none;*/
+
+    }
+
+    /* on OverFlow Next Line*/
+    /*.optionchain_autotoggle
+    {
+        white-space:initial;
+    }*/
+    /***this is used to make download buttons small***/
+    /*.dt_download_buttons{
+        min-width: 8px;
+        vertical-align: baseline;
+    }*/
+    .mdl-button--primary.mdl-button--primary {
+    border-radius:0px;
+    }
+    .dt_toggle_buttons {
+        min-width: 0px;
+        /* padding: 5px; */
+        text-transform: none;
+        font-size: 11px;
+        padding-right: 3px;
+        padding-left: 3px;
+        line-height: 20px;
+        height: 20px;
+    }
+
+    .infoclass {
+    border:2px solid #ccc;
+    }
+    .mdl_info_header
+    {
+    padding: 10px;
+    background-color:#1890CC!important;
+    }
+
+    .active {
+    background: #008ed4!important;
+    color: rgb(255,255,255)!important;
+    background: rgba(158,158,158,.2);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+    border: none!important;
+    }
+
+    .mdl-checkbox.is-checked .mdl-checkbox__tick-outline {
+    background: #008ed4 !important;	
+    }
+
+    .mdl-checkbox.is-checked .mdl-checkbox__box-outline {
+    border: 2px solid #008ed4 !important;
+    }
+
+
+    table.summary tbody th, table.summary tbody td {
+
+        border-top: 1px solid #000000;
+        border-right: 1px solid #000000;
+    }
+
+    table.summary tbody td {
+    white-space: nowrap;
+    text-align:right;
+    }
+
+    table.summary tbody th, table.summary tbody td {
+        padding: 3px 3px;
+    }
+    table.summary thead th, table.summary thead td {
+        padding: 3px 3px;
+    }
+
+    table.summary {
+
+        
+        font-family: 'Roboto', sans-serif;
+        font-size: 11.5px;
+        color: #333333;
+        background-color: #FFFFFF;
+        line-height: 20px!important;
+        border-bottom: 1px solid;
+        border-left: 1px solid;
+        margin-left: 10px;
+    }
+
+    .mdl-button {
+        min-width:8px;
+        vertical-align: baseline;
+    }
+    .mdl-button--primary.mdl-button--primary {
+        border-radius: 20px;
+        background: white !important;
+        color: rgb(63,81,181)!important;
+    }
+
+    @media(max-width : 768px) {
+    .desktop
+    {
+    display:none;	
+    }
+    .breaktext
+    {
+    display:none;
+    }
+    }
+
+    @media screen and (min-width: 581px) {
+    .BreakTable {
+            display :none
+    }
+    }
+
+    /*api button style*/
+    .smallGreenButton, .smallRedButton {
+        background: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: smaller;
+        height: 20px;
+        margin-left: 2px;
+        margin-right: 2px;
+        width: 25px;
+    }
+    .smallGreenButton{
+        border-color:green;
+        color: green;
+        text-align: center;
+    }
+    .smallRedButton {
+        align-content: center;
+        border-color: red;
+        color: red;
+    }
+
+    /*buttonstyle*/
+    .smallGreenButton, .smallRedButton {
+        background: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: smaller;
+        height: 20px;
+        margin-left: 2px;
+        margin-right: 2px;
+        width: 25px;
+    }
+
+    .smallGreenButton {
+        border-color: green;
+        color: green;
+        text-align: center;
+    }
+
+    .smallRedButton {
+        align-content: center;
+        border-color: red;
+        color: red;
+    }
+    #Infoforapi tr td {
+        text-align: center;
+    }
+    #loader {
+        border: 16px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 16px solid #3498db;
+        width: 80px;
+        height: 80px;
+        -webkit-animation: spin 2s linear infinite; /* Safari */
+        animation: spin 2s linear infinite;
+    }
+
+
+    /* .CallsColor{
+        background-color: #dc143c; color: #fff;
+    }
+    .PuttsColor{
+        background-color: #7BC862; color: #fff;
+    }
+    .strikecolor{
+        background-color: #6C7275;
+    } */
+
+        /* Safari */
+    @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+    }
+
+    @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+    }
