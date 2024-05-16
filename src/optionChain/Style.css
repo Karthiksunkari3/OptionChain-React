@@ -1,16 +1,9 @@
-.example{
-    border:1px solid black;
-}
-.example thead{
-    border-bottom: 2px solid #000000; background: white; position: sticky; top: 0; z-index: 10;cursor:pointer; 
-}
-
 
 
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: auto 130%;
+    width: auto;
   }
   
   td, th {
@@ -643,3 +636,12 @@ table {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
     }
+
+    .example{
+        border:1px solid black;
+    }
+    .example thead{
+        border-bottom: 2px solid #000000; background: white; position: sticky; top: 0; z-index: 10;cursor:pointer; 
+    }
+    
+    

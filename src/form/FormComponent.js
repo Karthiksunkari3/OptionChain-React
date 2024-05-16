@@ -19,16 +19,43 @@ const Form = () => {
     // useEffect hook for handling side effects (similar to componentDidMount and componentDidUpdate)
     useEffect(() => {
         // Your side effects code here
-    }, []); // Empty dependency array to run only once on component mount
-
+    }, []); 
+    // Empty dependency array to run only once on component mount
+    let [sections, setSections] = useState([
+        {
+          name: 'People',
+          items: [
+            {name: 'David'},
+            {name: 'Same'},
+            {name: 'Jane'}
+          ]
+        },
+        {
+          name: 'Animals',
+          items: [
+            {name: 'Aardvark'},
+            {name: 'Kangaroo'},
+            {name: 'Snake'}
+          ]
+        }
+      ]);
+      
+    
     return (
         <form onSubmit={(e) => { e.preventDefault(); }} method="post">
             <div className="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select" style={{ width: '140px' }}>
                 <label htmlFor="optSymbol" className="mdl-textfield__label">Select Symbol</label>
                 <select id='optSymbol' name='optSymbol' className="mdl-textfield__input" onChange={handleOptSymbolChange}>
-                    {/* Your options here */}
+                {/* <Picker items={sections}> */}
+        {section =>
+          <section key={section.name} title={section.name} items={section.items}>
+            {item => <item key={item.name}>{item.name}</item>}
+          </section>
+        }
+      {/* </Picker> */}
                 </select>
             </div>
+        
 
             <div className="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select" style={{ width: '80px' }}>
                 <label htmlFor="optExpDate" className="mdl-textfield__label">Expiry Date</label>

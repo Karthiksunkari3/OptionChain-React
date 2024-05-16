@@ -172,6 +172,7 @@ const formatTimestamp = (timestamp) => {
         const {marketOHLC} = ff.marketFF || ff.indexFF;
         const {eFeedDetails} = ff.marketFF || ff.indexFF;
         const {optionGreeks} = ff.marketFF || ff.indexFF;
+        const {marketLevel} = ff.marketFF || ff.indexFF;
         rows.push({
           instrumentKey: instrumentKey,
           LTT: formatTimestamp(ltpc.ltt),
@@ -184,6 +185,10 @@ const formatTimestamp = (timestamp) => {
           Ts: marketOHLC.ohlc[0].ts,
           Volume: marketOHLC.ohlc[0].volume,
           Vwap :eFeedDetails.atp,
+          Oi :eFeedDetails.oi,
+          Oichg : eFeedDetails.oi - eFeedDetails.poi,
+          Ask :marketLevel.bidAskQuote[4].aq,
+          Bit :marketLevel.bidAskQuote[4].bq,
           Vega	: toFixed(optionGreeks.vega),
           Theta	: toFixed(optionGreeks.theta),
           Gamma	: toFixed(optionGreeks.gamma),
@@ -210,7 +215,7 @@ const formatTimestamp = (timestamp) => {
       {isConnected && (
         <div className="feed-section">
           <div className="title"></div>
-          <table className="example" style={{width:'150%'}}>
+          <table className="example" style={{width:'106%'}}>
             <thead>
             <tr>
 						<th colspan="15" className="CallsColor" style={{ backgroundColor: '#dc143c', color: '#fff' }}>Calls</th>
@@ -231,8 +236,8 @@ const formatTimestamp = (timestamp) => {
                  <th>Vwap</th>
                  <th>Bid</th>
                  <th>Ask</th>
-                 <th>Chng</th>
                  <th>ChngPer</th>
+                 <th>Chng</th>
                
                 {/* <th>Open</th>
                 <th>High</th>
@@ -252,8 +257,8 @@ const formatTimestamp = (timestamp) => {
                 <th>Low</th>
                 <th>High</th>
                 <th>Open</th> */}
-                <th>ChngPer</th>
                 <th>Chng</th>
+                <th>ChngPer</th>
                 <th>Ask</th>
                 <th>Bid</th>
                 <th>Vwap</th>
@@ -283,12 +288,12 @@ const formatTimestamp = (timestamp) => {
                   <td>{row.Gamma}</td>
                   <td>{row.Delta}</td>
                   <td>{row.Iv}</td>
-                  <td></td>
-                  <td></td>
+                  <td>{row. Oichg}</td>
+                  <td>{row.Oi}</td>
                   <td>{row.Volume}</td>
                   <td>{row.Vwap}</td>
-                  <td></td>
-                  <td></td>
+                  <td>{row.Bit}</td>
+                  <td>{row.Ask}</td>
                   <td></td>
                   <td></td>
                   {/* <td>{row.Open}</td>
@@ -310,12 +315,12 @@ const formatTimestamp = (timestamp) => {
                   <td>{row.Open}</td> */}
                   <td></td>
                   <td></td>
-                  <td></td>
-                  <td></td>
+                  <td>{row.Ask}</td>
+                  <td>{row.Bit}</td>
                   <td>{row.Vwap}</td>
                   <td>{row.Volume}</td>
-                  <td></td>
-                  <td></td>
+                  <td>{row.Oi}</td>
+                  <td>{row. Oichg}</td>
                   <td>{row.Iv}</td>
                   <td>{row.Delta}</td>
                   <td>{row.Gamma}</td>
